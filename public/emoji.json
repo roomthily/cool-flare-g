@@ -1,0 +1,65 @@
+{
+  "water": [
+    {"chance": 10, "result": "🌊"},
+    {"chance": 1, "result": "🐠"},
+    {"chance": 1, "result": "🐟"},
+    {"chance": 1, "result": "🐡"},
+    {"chance": 10, "result": "͜ "},
+    {"chance": 1, "result": "͡ "},
+    {"chance": 50, "result": " "}
+  ],
+  "seafloor": [
+    {"chance": 1, "result": "🐙"},
+    {"chance": 50, "result": " "}
+  ],
+  "sky": [
+    {"chance": 15, "result": "☁️"},
+    {"chance": 15, "result": "☀️"},
+    {"chance": 15, "result": "⛅️"},
+    {"chance": 5, "result": "🚁"},
+    {"chance": 50, "result": " "}
+  ],
+  "weather": [
+    {"chance": 15, "result": "💦"},
+    {"chance": 15, "result": "☁️"},
+    {"chance": 10, "result": "⚡"},
+    {"chance": 50, "result": " "}
+  ],
+  "land": [
+    {"chance": 20, "result": "🌲"},
+    {"chance": 20, "result": "🌿"},
+    {"chance": 20, "result": "🌳"},
+    {"chance": 10, "result": "🍂"},
+    {"chance": 10, "result": "🍃"},
+    {"chance": 10, "result": "🌼"},
+    {"chance": 10, "result": "🌻"},
+    {"chance": 30, "result": "."},
+    {"chance": 5, "result": "🐝"},
+    {"chance": 5, "result": "🐘"},
+    {"chance": 5, "result": "🚲"},
+    {"chance": 50, "result": " "}
+  ],
+  "injectors": {
+    "water": [
+      {"chance": 1, "result": "🐙"},
+      {"chance": 1, "result": "🐋"},
+      {"chance": 1, "result": "🐚"},
+      {"chance": 1, "result": "🐢"}
+    ],
+    "land": [
+      {"chance": 5, "result": "🎏"},
+      {"chance": 5, "result": "🚂"},
+      {"chance": 5, "result": "🚙"},
+      {"chance": 5, "result": "🐏"},
+      {"chance": 5, "result": "🐐"},
+      {"chance": 1, "result": "🔥"}
+    ],
+    "sky": [
+      {"chance": 5, "result": "🚀"},
+      {"chance": 5, "result": "✈️"}
+    ],
+    "seafloor": [
+      {"chance": 1, "result": "🐙"}
+    ]
+  }
+}

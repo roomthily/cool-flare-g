@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.2em;
+  margin: 2em;
+  background: #CCE5EE;
+  overflow:hidden;
+}
+
+h1 {
+  font-size: 1.6em;
+  margin-bottom: 0.6em;
+}
+
+button {
+  border-radius: 50%;
+  background-color: #fff;
+  width: 3em;
+  height: 3em;
+  margin-top: 2em;
+  border: 0;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  background:#fff;
+  padding: 0.4em;
+  border-radius: 20px;
+}
+.ticker {
+  background: #fff; 
+  width: 100%;
+  font-size: 1.2em;
+  height: 100%;
+  vertical-align:middle;
+  padding: 0.3em 0 0.2em 0.2em;
+  
+  display:inline-block;
+  white-space: nowrap;
+  overflow:hidden;
+  direction: rtl;
+}
+.ticker.water {
+/*   background-color: #e0f3fc; */
+}
+.ticker.sky {
+/*   background-color: #edfaff; */
+}
+.ticker.land {
+/*   background-color: #f6ffed; */
+}
+
+.ticker span {
+  padding-left: 0.2em;
+  padding-right:0.2em;
+}
+
+span.pulse {
+/*   padding: 0.2em; */
+  width: 1.6em;
+  background-color: #CCE5EE;
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(204, 229, 238, 0.5);
+  animation: pulse 2s 1;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(204, 229, 238, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(2204, 229, 238, 0);
+  }
+  100% {
+    box-shadow: none;
+    background:transparent;
+  }
+}
+
+.injected {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 1.2em;
+  float: right;
+}
+  
+}
+/* .injected.updated {
+  width: 3em;
+  height: 3em;
+  animation: shadow 2s 1;
+}
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 0 rgba(255, 255, 255, 1);
+  }
+  70% {
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(255, 255, 255, 1);
+  } 
+}*/
