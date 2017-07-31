@@ -23,14 +23,17 @@
       <div class="ticker water">&nbsp;</div>
       <div class="ticker water">&nbsp;</div>
     </div>
-    <button name="add"> + </button>
-    <div class="injected"></div>
-    
+    <div class="adder">
+      <button name="add"> + </button>
+      <div class="injected"></div>
+    </div>
 
     <!-- Your web-app is https, so your scripts need to be too -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
             crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/client.js"></script>
 

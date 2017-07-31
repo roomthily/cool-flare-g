@@ -19,8 +19,14 @@ app.get("/", function (request, response) {
 
 server.listen(8000);
 
+// timing options (ms)
 const _intervals = [1500, 3000, 4500, 2500, 5000];
 
+// define the socket namespace details with charset 
+// and injector as keys in the emoji.json file.
+// includes the namespace parameter, the streaming 
+// charset (charset) and the manually injected 
+// charset (injector)
 const _sockets = {
   sky1: {
     namespace: "/sky-1",
@@ -73,6 +79,7 @@ function add_socket(nsp, charset) {
     console.log('now connected: ' + nsp);
     
     // push an emoji char to the client
+    // at an interval selected from our list
     var interval = setInterval(function() {
       skt.emit('stream', new_char(charset));
     }, random.pick(_intervals));  
@@ -84,6 +91,8 @@ function add_socket(nsp, charset) {
       var injector = _set_by_namespace(data.trim());
       
       // add a flag for processing on the client.
+      // (this probably should be changed to a different
+      // tag on emit :/)
       var response = new_char(injector);
       response['injected'] = '1';
       skt.emit('stream', response);
@@ -102,5 +111,6 @@ function _set_by_namespace(ns) {
 
 function new_char(set) {
   // select a char from the weighted set
+  // and wrap in the json
   return {"char": wsr.select(set)};
 }
